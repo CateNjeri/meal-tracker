@@ -6,3 +6,7 @@ import { Entry } from './entry.model';
   template: `
   `
 })
+
+export class NewEntryComponent {
+
+}
