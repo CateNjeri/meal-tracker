@@ -1,12 +1,9 @@
 {
-  "name": "angular2-skeleton",
+  "name": "meal-tracker",
   "description": "",
-  "main": "",
-  "authors": [
-    "Tim <tim.bourgault@gmail.com>"
-  ],
+  "main": "gulpfile.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/Timothy-Bourgault/angular-template",
   "ignore": [
     "**/.*",
     "node_modules",
