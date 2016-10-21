@@ -13,7 +13,7 @@ import { Entry } from './entry.model';
         <input [(ngModel)]="childSelectedEntry.details">
       </div>
       <div>
-        <label>Edit Meal Calories:</label>
+        <label>Edit Total Meal Calories:</label>
         <input [(ngModel)]="childSelectedEntry.calories">
         <label>Edit Meal Id Number:</label>
         <input [(ngModel)]="childSelectedEntry.id">

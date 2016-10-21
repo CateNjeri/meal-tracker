@@ -12,16 +12,20 @@ import { Entry } from './entry.model';
       <input #newDetails>
     </div>
     <div>
-    <select #newCalorieLevel>
-      <option selected="selected">optional</option>
-      <option>Above 500 calories</option>
-      <option>Below 500 calories</option>
-    </select>
+      <label>Select Calorie Level:</label>
+      <select #newCalorieLevel>
+        <option selected="selected">optional</option>
+        <option>Above 500 Calories</option>
+        <option>Below 500 Calories</option>
+      </select>
+      <label>Total Number Of Calories:</label>
+      <input #newCalories>
       <label>Entry ID:</label>
       <input #newId>
-      <button (click)="addClicked(newMealName.value, newDetails.value, newCalorieLevel.value, newId.value);
+      <button (click)="addClicked(newMealName.value, newDetails.value, newCalories.value, newCalorieLevel.value, newId.value);
       newMealName.value='';
       newDetails.value='';
+      newCalories.value='';
       newCalorieLevel.value='';
       newId.value='';
       ">Add Entry</button>
@@ -31,8 +35,8 @@ import { Entry } from './entry.model';
 
 export class NewEntryComponent {
   @Output() newEntrySender = new EventEmitter();
-  addClicked(mealName: string, details: string, calories: number, id: number  ) {
-    var newEntryToAdd: Entry = new Entry(mealName, details, calories, id);
+  addClicked(mealName: string, details: string, calories: number, calorie-level: string, id: number  ) {
+    var newEntryToAdd: Entry = new Entry(mealName, details, calories, calorie-level, id);
     this.newEntrySender.emit(newEntryToAdd);
   }
 }
