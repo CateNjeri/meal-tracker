@@ -7,5 +7,8 @@ import {Entry} from './entry.model';
 })
 
   export class CalorieLevelPipe implements PipeTransform {
-  
+    transform(input: Entry[], desiredCalories) {
+    
+    }
+
   }

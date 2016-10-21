@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { EntryListComponent } from './entry-list.component';
 import { EditEntryComponent } from './edit-entry.component';
 import { NewEntryComponent } from './new-entry.component';
-import { CalorieLevelPipe } from './calorie-level.component';
+import { CalorieLevelPipe } from './calorie-level.pipe';
 import { EntryComponent } from './entry.component';
 
 @NgModule({
