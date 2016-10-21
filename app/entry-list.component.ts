@@ -21,7 +21,7 @@ export class EntryListComponent {
   @Input() childEntryList: Entry[];
   @Output() clickSender = new EventEmitter();
   public desiredCalories: string = "Show All Entries";
-  onChange(iptionFromMenu) {
+  onChange(optionFromMenu) {
    this.desiredCalories = optionFromMenu;
    console.log(this.desiredCalories);
   }
