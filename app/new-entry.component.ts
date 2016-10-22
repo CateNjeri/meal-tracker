@@ -6,27 +6,20 @@ import { Entry } from './entry.model';
   template: `
   <h1>New Meal</h1>
     <div>
-      <label>Meal Name:</lable>
-      <input #newMealName>
+      <label>Meal Name:</label>
+      <input #newMealName><br>
       <label>Entry Details:</label>
-      <input #newDetails>
+      <input #newDetails><br>
     </div>
     <div>
-      <label>Select Calorie Level:</label>
-      <select #newCalorieLevel>
-        <option selected="selected">optional</option>
-        <option>Above 500 Calories</option>
-        <option>Below 500 Calories</option>
-      </select>
       <label>Total Number Of Calories:</label>
-      <input #newCalories>
+      <input #newCalories><br>
       <label>Entry ID:</label>
-      <input #newId>
-      <button (click)="addClicked(newMealName.value, newDetails.value, newCalories.value, newCalorieLevel.value, newId.value);
+      <input #newId><br>
+      <button (click)="addClicked(newMealName.value, newDetails.value, newCalories.value, newId.value);
       newMealName.value='';
       newDetails.value='';
       newCalories.value='';
-      newCalorieLevel.value='';
       newId.value='';
       ">Add Entry</button>
     </div>

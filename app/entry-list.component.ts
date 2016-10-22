@@ -7,10 +7,10 @@ import { Entry } from './entry.model';
   <label>Sort By Calorie Level</label>
   <select (change)="onChange($event.target.value)" class="filter">
     <option value="all">Show All Entries</option>
-    <option value="above500">Entries Above 500 calories</option>
-    <option value="below500">Entries Below 500 calories</option>
+    <option value="above500">Entries Above 500 Calories</option>
+    <option value="below500">Entries Below 500 Calories</option>
   </select>
-  <div *ngFor="let currentEntry of childEntryList | calorie-level:desiredCalories">
+  <div *ngFor="let currentEntry of childEntryList | calorieLevel:desiredCalories">
     <entry-display [entry]="currentEntry"></entry-display>
     <button (click)="editButtonHasBeenClicked(currentEntry)">Edit Entry</button>
   </div>
