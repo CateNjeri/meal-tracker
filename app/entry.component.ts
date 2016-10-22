@@ -3,7 +3,7 @@ import { Entry } from './entry.model';
 
 @Component({
   selector: 'entry-display',
-  template:
+  template: `
   <div>
     <label>{{ entry.mealName }}</label><br>
     <label>{{ entry.details }}</label><br>

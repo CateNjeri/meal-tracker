@@ -8,7 +8,15 @@ import {Entry} from './entry.model';
 
   export class CalorieLevelPipe implements PipeTransform {
     transform(input: Entry[], desiredCalories) {
-    
+      var output: Entry[] = [];
+      if(desiredCalories !== "all") {
+        for (var i = 0; i < input.length; i++) {
+          if (input[i].calories > 500) {
+
+          }
+        }
+      }
+
     }
 
   }

@@ -35,8 +35,8 @@ import { Entry } from './entry.model';
 
 export class NewEntryComponent {
   @Output() newEntrySender = new EventEmitter();
-  addClicked(mealName: string, details: string, calories: number, calorie-level: string, id: number  ) {
-    var newEntryToAdd: Entry = new Entry(mealName, details, calories, calorie-level, id);
+  addClicked(mealName: string, details: string, calories: number, id: number  ) {
+    var newEntryToAdd: Entry = new Entry(mealName, details, calories, id);
     this.newEntrySender.emit(newEntryToAdd);
   }
 }
