@@ -19,7 +19,7 @@ import { Entry } from './entry.model';
       newDetails.value='';
       newCalories.value='';
       newId.value='';
-      ">Add Entry</button>
+      " class="pull-right btn-success btn btn-lg">Add Entry</button>
     </div>
   `
 })

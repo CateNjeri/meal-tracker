@@ -4,8 +4,8 @@ import { Entry } from './entry.model';
 @Component({
   selector: 'my-app',
   template: `
-  <div class="container">
-    <h1>Meal Tracker 3.o</h1>
+  <div class="container"  id="bottomMargin">
+    <h1>Meal Tracker v.3.o</h1>
     <entry-list
       [childEntryList]="masterEntryList"
       (clickSender)="showDetails($event)"

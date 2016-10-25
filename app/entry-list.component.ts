@@ -4,7 +4,7 @@ import { Entry } from './entry.model';
 @Component({
   selector: 'entry-list',
   template: `
-  <label>Sort By Calorie Level</label>
+  <label>Sort By Calorie Level...&nbsp;&nbsp;</label>
   <select (change)="onChange($event.target.value)" class="filter">
     <option value="all" selected="selected">Show All Entries</option>
     <option value="above500">Entries Above 500 Calories</option>
@@ -12,7 +12,8 @@ import { Entry } from './entry.model';
   </select>
   <div *ngFor="let currentEntry of childEntryList | calorieLevel:desiredCalories">
     <entry-display [entry]="currentEntry"></entry-display>
-    <button (click)="editButtonHasBeenClicked(currentEntry)">Edit Entry</button>
+    <button (click)="editButtonHasBeenClicked(currentEntry)" class="pull-right btn-warning">Edit Entry</button>
+    <br><br><hr>
   </div>
   `
 })
