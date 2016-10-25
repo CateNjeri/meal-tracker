@@ -6,17 +6,25 @@ import {Entry} from './entry.model';
   pure: false
 })
 
-  export class CalorieLevelPipe implements PipeTransform {
-    transform(input: Entry[], desiredCalories) {
-      var output: Entry[] = [];
-      if(desiredCalories !== "all") {
-        for (var i = 0; i < input.length; i++) {
-          if (input[i].calories > 500) {
-
-          }
+export class CalorieLevelPipe implements PipeTransform {
+  transform(input: Entry[], desiredCalories) {
+    var output: Entry[] = [];
+    if(desiredCalories === "above500") {
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].calories >= 500) {
+          output.push(input[i]);
         }
       }
-
+      return output;
+    } else if (desiredCalories === "below500") {
+      for (var i = 0; i < input.length; i++) {
+        if (input[i].calories <= 500) {
+          output.push(input[i]);
+        }
+      }
+      return output;
+    } else {
+      return input;
     }
-
   }
+}

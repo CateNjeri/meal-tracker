@@ -4,18 +4,16 @@ import { Entry } from './entry.model';
 @Component({
   selector: 'new-entry',
   template: `
-  <h1>New Meal</h1>
+  <h1>New Meal Entry</h1>
     <div>
       <label>Meal Name:</label>
-      <input #newMealName><br>
+      <input #newMealName><br><br>
       <label>Entry Details:</label>
-      <input #newDetails><br>
-    </div>
-    <div>
-      <label>Total Number Of Calories:</label>
-      <input #newCalories><br>
+      <input #newDetails><br><br>
+      <label># Of Calories:</label>
+      <input #newCalories><br><br>
       <label>Entry ID:</label>
-      <input #newId><br>
+      <input #newId><br><br>
       <button (click)="addClicked(newMealName.value, newDetails.value, newCalories.value, newId.value);
       newMealName.value='';
       newDetails.value='';
@@ -28,7 +26,7 @@ import { Entry } from './entry.model';
 
 export class NewEntryComponent {
   @Output() newEntrySender = new EventEmitter();
-  addClicked(mealName: string, details: string, calories: number, id: number  ) {
+  addClicked(mealName: string, details: string, calories: number, id: number) {
     var newEntryToAdd: Entry = new Entry(mealName, details, calories, id);
     this.newEntrySender.emit(newEntryToAdd);
   }
