@@ -11,9 +11,9 @@ import { Entry } from './entry.model';
       <label>Entry Details:</label>
       <input #newDetails><br><br>
       <label># Of Calories:</label>
-      <input #newCalories><br><br>
+      <input #newCalories type="number"><br><br>
       <label>Entry ID:</label>
-      <input #newId><br><br>
+      <input #newId type="number"><br><br>
       <button (click)="addClicked(newMealName.value, newDetails.value, newCalories.value, newId.value);
       newMealName.value='';
       newDetails.value='';

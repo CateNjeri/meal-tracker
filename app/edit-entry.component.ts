@@ -8,13 +8,13 @@ import { Entry } from './entry.model';
       <h1>Edit Entry</h1>
       <div>
         <label>Edit Meal Name:</label>
-        <input [(ngModel)]="childSelectedEntry.mealName"><br><br>
+        <input [(ngModel)]="childSelectedEntry.mealName" type="string"><br><br>
         <label>Edit Meal Details:</label>
-        <input [(ngModel)]="childSelectedEntry.details"><br><br>
+        <input [(ngModel)]="childSelectedEntry.details" type="string"><br><br>
         <label>Edit Total Meal Calories:</label>
-        <input [(ngModel)]="childSelectedEntry.calories"><br><br>
+        <input [(ngModel)]="childSelectedEntry.calories" type="number"><br><br>
         <label>Edit Meal Id Number:</label>
-        <input [(ngModel)]="childSelectedEntry.id"><br><br>
+        <input [(ngModel)]="childSelectedEntry.id" type="number"><br><br>
         <button (click)="doneClicked()">Submit Edits</button>
       </div>
     </div>
