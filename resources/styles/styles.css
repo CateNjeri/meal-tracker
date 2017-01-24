@@ -1,19 +1,19 @@
 body{
-  background-image: url(https://nothymetowastedotorg.files.wordpress.com/2014/07/cherriesisolateddarkest.jpg);
+  background-image: url(https://i1.wallpaperscraft.com/image/coffee_tea_cups_grains_tray_cinnamon_spatula_sugar_84954_300x168.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   h1 {
     margin-top: 30px;
-    color: Violet;
-    font-family: fantasy;
+    color: #b30059;
+    font-family: 'Lobster Two', cursive;
     font-size: 50px;
     text-align: center;
   }
   label {
     font-size: 30px;
-    color: lightgreen;
+    color:  #cc0000;
     font-family:serif;
   }
   #bottomMargin {

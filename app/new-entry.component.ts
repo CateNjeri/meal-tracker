@@ -10,7 +10,7 @@ import { Entry } from './entry.model';
       <input #newMealName><br><br>
       <label>Entry Details:</label>
       <input #newDetails><br><br>
-      <label># Of Calories:</label>
+      <label>No. Of Calories:</label>
       <input #newCalories type="number"><br><br>
       <label>Entry ID:</label>
       <input #newId type="number"><br><br>

@@ -5,7 +5,7 @@ import { Entry } from './entry.model';
   selector: 'my-app',
   template: `
   <div class="container"  id="bottomMargin">
-    <h1>Meal Tracker v.3.o</h1>
+    <h1>Meal Tracker </h1>
     <entry-list
       [childEntryList]="masterEntryList"
       (clickSender)="showDetails($event)"
@@ -21,10 +21,10 @@ import { Entry } from './entry.model';
 
 export class AppComponent {
   public masterEntryList: Entry[] = [
-      new Entry("Zucchini Noodles", "Zucchini peeled into strings and topped with marinara sauce", 700, 1),
-      new Entry("Apple", "A granny smith apple from New Seasons", 70, 2),
-      new Entry("Chocolate Pumpkin Shake", "Got it as a pick me up during my code review from The Original", 800, 3),
-      new Entry("Big Salad", "My regular daily huge salad with mixed greens, walnuts, chia seeds, avacado, oil, vinegar, and salt", 230, 4)
+      new Entry("Noodles", "Ordered noodles and meat balls from Anita's kitchen for lunch", 700, 1),
+      new Entry("Apple", "Got an apple from kibanda to top my lunch", 70, 2),
+      new Entry("Vanilla ice cream", "Got it as a pick me up during my coding", 800, 3),
+      new Entry("Salad", "Tried salad with mixed fruits, raisins and carrots from Mama Mboga ", 230, 4)
   ];
   selectedEntry: Entry = null;
   showDetails(clickedEntry: Entry) {

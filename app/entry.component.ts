@@ -5,10 +5,10 @@ import { Entry } from './entry.model';
   selector: 'entry-display',
   template: `
   <div>
-    <label>~&nbsp;Name: &nbsp;&nbsp;{{ entry.mealName }}</label><br>
-    <label>~&nbsp;Details: &nbsp;&nbsp;{{ entry.details }}</label><br>
-    <label>~&nbsp;Calories: &nbsp;&nbsp;{{ entry.calories }}</label><br>
-    <label>~&nbsp;Meal ID: &nbsp;&nbsp;{{ entry.id }}</label><br>
+    <label>Name: &nbsp;&nbsp;{{ entry.mealName }}</label><br>
+    <label>Details: &nbsp;&nbsp;{{ entry.details }}</label><br>
+    <label>Calories: &nbsp;&nbsp;{{ entry.calories }}</label><br>
+    <label>Meal ID: &nbsp;&nbsp;{{ entry.id }}</label><br>
   </div>
   `
 })

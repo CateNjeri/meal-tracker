@@ -4,9 +4,9 @@ import { Entry } from './entry.model';
 @Component({
   selector: 'entry-list',
   template: `
-  <label>Sort By Calorie Level...&nbsp;&nbsp;</label>
+  <label>Sort By Calorie Level:&nbsp;&nbsp;</label>
   <select (change)="onChange($event.target.value)" class="filter">
-    <option value="all" selected="selected">Show All Entries</option>
+    <option value="all" selected="selected">Calories</option>
     <option value="above500">Entries Above 500 Calories</option>
     <option value="below500">Entries Below 500 Calories</option>
   </select>
